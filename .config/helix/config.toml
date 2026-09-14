@@ -1,0 +1,7 @@
+theme = "noctalia"
+
+[editor]
+line-number = "relative"
+
+[keys.normal]
+C-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
