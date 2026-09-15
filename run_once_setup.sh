@@ -10,8 +10,5 @@ gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3'
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 
-# papirus folders
-papirus-folders -t Papirus-Dark -C yaru
-
 # noctalia color scheme
 noctalia msg wallpaper-set /usr/share/backgrounds/steins.png
