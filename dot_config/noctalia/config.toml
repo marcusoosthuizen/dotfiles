@@ -93,7 +93,7 @@ source = "wallpaper"
 
     [theme.templates]
     builtin_ids = [ "foot", "gtk3", "gtk4", "helix", "kcolorscheme", "qt", "starship", "sway" ]
-    community_ids = [ "pywalfox", "lazygit" ]
+    community_ids = [ "pywalfox", "steam", "lazygit" ]
 
 [wallpaper.default]
 path = "/usr/share/backgrounds/steins.png"
