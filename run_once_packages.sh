@@ -6,7 +6,11 @@ brew install -y lazygit
 brew install -y fastfetch
 
 # flat pak(age)s
-flatpak install -y org.gtk.Gtk3theme.adw-gtk3-dark
-flatpak install -y org.gtk.Gtk3theme.adw-gtk3
+flatpak override --user --filesystem=xdg-config/gtk-3.0:ro --filesystem=xdg-config/gtk-4.0:ro
 
-flatpak install -y flathub org.gnome.EasyTAG
+flatpak install -y org.gtk.Gtk3theme.adw-gtk3-dark # gtk themes
+flatpak install -y org.gtk.Gtk3theme.adw-gtk3 # gtk themes
+
+flatpak install -y flathub org.gnome.EasyTAG # tagging software
+flatpak install flathub com.obsproject.Studio # recording software
+flatpak install flathub org.kde.krita # art program
