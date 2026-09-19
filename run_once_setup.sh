@@ -23,4 +23,4 @@ ln -sf /usr/lib/millennium/libmillennium_hhx64.so           ".steam/steam/ubuntu
 # pywalfox
 pipx install pywalfox
 .local/bin/pywalfox install --manifest-path ~/.mozilla/native-messaging-hosts \
-                 --profile-path  ~/.config/librewolf/librewolf
+                 --profile-path  ~/.config/librewolf/librewolf || true
