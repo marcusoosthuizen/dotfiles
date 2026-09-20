@@ -26,7 +26,6 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-alias vim=hx
 alias music-dlp="yt-dlp -t mp3 --add-metadata --embed-thumbnail"
 
 eval "$(starship init bash)"
