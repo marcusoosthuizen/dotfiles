@@ -92,8 +92,8 @@ polkit_agent = true
 source = "wallpaper"
 
     [theme.templates]
-    builtin_ids = [ "foot", "gtk3", "gtk4", "helix", "kcolorscheme", "qt", "starship", "sway" ]
-    community_ids = [ "pywalfox", "steam", "obs", "lazygit" ]
+    builtin_ids = [ "foot", "gtk3", "gtk4", "kcolorscheme", "qt", "starship", "sway" ]
+    community_ids = [ "discord", "gimp", "steam", "obs", "lazygit" ]
 
 [wallpaper.default]
 path = "/usr/share/backgrounds/steins.png"

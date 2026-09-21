@@ -7,7 +7,7 @@ flatpak install -y org.gtk.Gtk3theme.adw-gtk3 # gtk themes
 flatpak install -y flathub org.gnome.EasyTAG # tagging software
 flatpak install -y flathub com.obsproject.Studio # recording software
 flatpak install -y flathub org.gimp.GIMP # art program
-
+flatpak install -y flathub dev.vencord.Vesktop # discord client
 
 # flatpak overrides
 flatpak override --user --filesystem=xdg-config/gtk-3.0:ro --filesystem=xdg-config/gtk-4.0:ro # gtk theming

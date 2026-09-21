@@ -1,0 +1,84 @@
+# miracle-wm config #
+terminal: foot
+
+startup_apps:
+  - command: noctalia
+    restart_on_death: true
+
+default_action_overrides:
+  - name: quit_active_window
+    action: down
+    modifiers:
+      - primary
+    key: q
+
+custom_actions:
+  - command: thunar
+    action: down
+    modifiers:
+      - primary
+    key: e
+  - command: steam
+    action: down
+    modifiers:
+      - primary
+    key: g
+  - command: noctalia msg panel-toggle launcher
+    action: down
+    modifiers:
+      - primary
+    key: d
+  - command: noctalia msg volume-up
+    action: down
+    modifiers:
+      - primary
+    key: XF86AudioRaiseVolume
+  - command: noctalia msg volume-down
+    action: down
+    modifiers:
+      - primary
+    key: XF86AudioLowerVolume
+  - command: noctalia msg volume-up
+    action: repeat
+    modifiers:
+      - primary
+    key: XF86AudioRaiseVolume
+  - command: noctalia msg volume-down
+    action: repeat
+    modifiers:
+      - primary
+    key: XF86AudioLowerVolume
+  - command: noctalia msg volume-mute
+    action: down
+    modifiers:
+      - primary
+    key: XF86AudioMute
+  - command: noctalia msg brightness-up
+    action: down
+    modifiers:
+      - primary
+    key: XF86MonBrightnessUp
+  - command: noctalia msg brightness-down
+    action: down
+    modifiers:
+      - primary
+    key: XF86MonBrightnessDown
+  - command: noctalia msg brightness-up
+    action: repeat
+    modifiers:
+      - primary
+    key: XF86MonBrightnessUp
+  - command: noctalia msg brightness-down
+    action: repeat
+    modifiers:
+      - primary
+    key: XF86MonBrightnessDown
+
+border:
+  size: 2
+  color: 0x9c8e8aff
+  focus_color: 0xe1bfb7ff
+  radius: 16
+
+touchpad:
+  click_mode: finger_count

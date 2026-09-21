@@ -1,11 +1,11 @@
 [Default Applications]
-application/pdf=librewolf.desktop
-application/x-extension-htm=librewolf.desktop
-application/x-extension-html=librewolf.desktop
-application/x-extension-shtml=librewolf.desktop
-application/x-extension-xht=librewolf.desktop
-application/x-extension-xhtml=librewolf.desktop
-application/xhtml+xml=librewolf.desktop
+application/pdf=zen-browser.desktop
+application/x-extension-htm=zen-browser.desktop
+application/x-extension-html=zen-browser.desktop
+application/x-extension-shtml=zen-browser.desktop
+application/x-extension-xht=zen-browser.desktop
+application/x-extension-xhtml=zen-browser.desktop
+application/xhtml+xml=zen-browser.desktop
 audio/aac=mpv.desktop
 audio/mpeg=mpv.desktop
 audio/ogg=mpv.desktop
@@ -14,7 +14,7 @@ audio/webm=mpv.desktop
 audio/x-flac=mpv.desktop
 image/png=imv.desktop
 inode/directory=thunar.desktop
-text/html=librewolf.desktop
+text/html=zen-browser.desktop
 video/avi=mpv.desktop
 video/mp4=mpv.desktop
 video/mpeg=mpv.desktop
@@ -22,12 +22,12 @@ video/quicktime=mpv.desktop
 video/webm=mpv.desktop
 video/x-matroska=mpv.desktop
 video/x-msvideo=mpv.desktop
-x-scheme-handler/chrome=librewolf.desktop
-x-scheme-handler/http=librewolf.desktop
-x-scheme-handler/https=librewolf.desktop
+x-scheme-handler/chrome=zen-browser.desktop
+x-scheme-handler/http=zen-browser.desktop
+x-scheme-handler/https=zen-browser.desktop
 
 [Added Associations]
-application/pdf=librewolf.desktop;
+application/pdf=zen-browser.desktop;
 audio/aac=mpv.desktop;
 audio/mpeg=mpv.desktop;
 audio/ogg=mpv.desktop;
@@ -42,8 +42,6 @@ video/quicktime=mpv.desktop;
 video/webm=mpv.desktop;
 video/x-matroska=mpv.desktop;
 video/x-msvideo=mpv.desktop;
-x-scheme-handler/chrome=librewolf.desktop;
-x-scheme-handler/http=librewolf.desktop;
-x-scheme-handler/https=librewolf.desktop;
-
-[Removed Associations]
+x-scheme-handler/chrome=zen-browser.desktop;
+x-scheme-handler/http=zen-browser.desktop;
+x-scheme-handler/https=zen-browser.desktop;
