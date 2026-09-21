@@ -4,6 +4,8 @@ terminal: foot
 startup_apps:
   - command: noctalia
     restart_on_death: true
+  - command: systemd-run --user /usr/libexec/xdg-desktop-portal --replace
+    in_systemd_scope: true
 
 default_action_overrides:
   - name: quit_active_window
