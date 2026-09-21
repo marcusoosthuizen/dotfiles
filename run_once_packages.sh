@@ -10,5 +10,6 @@ flatpak install -y flathub org.gimp.GIMP # art program
 flatpak install -y flathub dev.vencord.Vesktop # discord client
 
 # flatpak overrides
-flatpak override --user --filesystem=xdg-config/gtk-3.0:ro --filesystem=xdg-config/gtk-4.0:ro # gtk theming
+flatpak override --user --filesystem=xdg-config/gtk-3.0:ro --filesystem=xdg-config/gtk-4.0:ro # gtk theming\
+flatpak override --user --socket=wayland # making flatpaks open in wayland
 flatpak override --user com.obsproject.Studio --filesystem=xdg-config/obs-studio # obs theme
