@@ -77,7 +77,7 @@ custom_actions:
     key: XF86MonBrightnessDown
 
 border:
-  size: 2
+  size: 0
   color: 0x9c8e8aff
   focus_color: 0xe1bfb7ff
   radius: 16
