@@ -78,8 +78,8 @@ custom_actions:
 
 border:
   size: 0
-  color: 0x9c8e8aff
-  focus_color: 0xe1bfb7ff
+  color: 0x9c8e8a00
+  focus_color: 0xe1bfb700
   radius: 16
 
 touchpad:
