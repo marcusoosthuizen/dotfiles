@@ -94,14 +94,6 @@ window-rule {
    default-column-width { proportion 0.5; }
 }
 
-// imv //
-window-rule {
-
-   open-floating true
-   default-column-width { }
-   default-window-height { }
-}
-
 debug {
    honor-xdg-activation-with-invalid-serial
 }
