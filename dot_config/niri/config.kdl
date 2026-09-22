@@ -119,6 +119,9 @@ binds {
     Mod+Z { spawn-sh "flatpak run app.zen_browser.zen"; }
     Mod+Shift+Z { spawn-sh "flatpak run dev.zed.Zed"; }
     Mod+D { spawn-sh "flatpak run dev.vencord.Vesktop"; }
+    Mod+Shift+G { spawn-sh "org.prismlauncher.PrismLauncher"; }
+    Mod+Shift+O { spawn-sh "md.obsidian.Obsidian"; }
+    Mod+Shift+M { spawn-sh "org.jeffvli.feishin"; }
     Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
     Alt+Tab { spawn-sh "noctalia msg window-switcher"; }
     Super+Alt+L { spawn-sh "noctalia msg session lock"; }

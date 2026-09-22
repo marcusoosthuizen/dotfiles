@@ -102,7 +102,7 @@ source = "wallpaper"
 
     [theme.templates]
     builtin_ids = [ "foot", "gtk3", "gtk4", "kcolorscheme", "niri", "qt", "starship" ]
-    community_ids = [ "zen-browser", "discord", "gimp", "zed", "steam", "obs" ]
+    community_ids = [ "feishin", "zen-browser", "discord", "gimp", "obsidian", "zed", "prismlauncher", "steam", "obs" ]
 
 [wallpaper.default]
 path = "/usr/share/backgrounds/steins.png"
