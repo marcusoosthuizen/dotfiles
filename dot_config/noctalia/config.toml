@@ -8,7 +8,7 @@ tint_intensity = 0.0
 
 [bar.default]
 capsule = true
-center = [ "media", "clock", "weather" ]
+center = [ "workspaces" ]
 concave_edge_corners = false
 end = [ "tray", "cpu", "notifications", "volume", "network", "battery" ]
 margin_ends = 0
@@ -16,7 +16,7 @@ radius_top_left = 0
 radius_top_right = 0
 scale = 1.2000000104308128
 shadow = false
-start = [ "workspaces", "active_window" ]
+start = [ "clock", "weather", "media", "active_window" ]
 thickness = 42
 
 [battery]
@@ -86,7 +86,7 @@ password_style = "random"
 polkit_agent = true
 
     [shell.animation]
-    enabled = false
+    enabled = true
 
     [shell.launcher]
     categories = false
