@@ -99,16 +99,13 @@ debug {
    honor-xdg-activation-with-invalid-serial
 }
 
-// Example: block out two password managers from screen capture.
-// (This example rule is commented out with a "/-" in front.)
-/-window-rule {
-    match app-id=r#"^org\.keepassxc\.KeePassXC$"#
-    match app-id=r#"^org\.gnome\.World\.Secrets$"#
+window-rule {
+    match app-id="vesktop"
+    match app-id="thunar"
+    match app-id="md.obsidian.Obsidian"
+    match namespace="^notifications$"
 
     block-out-from "screen-capture"
-
-    // Use this instead if you want them visible on third-party screenshot tools.
-    // block-out-from "screencast"
 }
 
 binds {
