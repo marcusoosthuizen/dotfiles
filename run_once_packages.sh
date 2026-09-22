@@ -3,6 +3,7 @@
 # flat pak(age)s
 flatpak install -y org.gtk.Gtk3theme.adw-gtk3-dark # gtk themes
 flatpak install -y org.gtk.Gtk3theme.adw-gtk3 # gtk themes
+flatpak install -y flathub page.codeberg.libre_menu_editor.LibreMenuEditor # menu editor
 
 flatpak install -y flathub org.gnome.EasyTAG # tagging software
 flatpak install -y flathub com.obsproject.Studio # recording software
