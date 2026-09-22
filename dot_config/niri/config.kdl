@@ -103,9 +103,14 @@ window-rule {
     match app-id="vesktop"
     match app-id="thunar"
     match app-id="md.obsidian.Obsidian"
-    match namespace="^notifications$"
 
     block-out-from "screen-capture"
+}
+
+layer-rule {
+    match namespace="^notifications$"
+
+    block-out-from "screencast"
 }
 
 binds {
