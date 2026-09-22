@@ -88,6 +88,7 @@ window-rule {
 
 // Half Sized Windows //
 window-rule {
+   open-floating false
    match app-id="foot"
    match app-id="thunar"
    default-column-width { proportion 0.5; }
