@@ -8,7 +8,7 @@ tint_intensity = 0.0
 
 [bar.default]
 capsule = true
-center = [ "workspaces" ]
+center = [ "media", "clock", "weather" ]
 concave_edge_corners = false
 end = [ "tray", "cpu", "notifications", "volume", "network", "battery" ]
 margin_ends = 0
@@ -16,7 +16,7 @@ radius_top_left = 0
 radius_top_right = 0
 scale = 1.2000000104308128
 shadow = false
-start = [ "clock", "weather", "media", "active_window" ]
+start = [ "workspaces", "active_window" ]
 thickness = 42
 
 [battery]
