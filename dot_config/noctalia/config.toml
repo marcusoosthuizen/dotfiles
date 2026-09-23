@@ -32,27 +32,73 @@ sidebar_section = "none"
 [desktop_widgets]
 enabled = false
 
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = false
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = false
+    timeout = 660.0
+
 [location]
 auto_locate = true
 
 [lockscreen_widgets]
 enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@eDP-1" ]
+widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@eDP-1", "lockscreen-widget-0000000000000001" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
     major_interval = 4
     visible = true
 
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 982.0
+    enabled = false
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
     box_height = 70.0
     box_width = 400.0
-    cx = 752.0
-    cy = 501.5
+    cx = 768.0
+    cy = 480.0
     output = "eDP-1"
-    placement_height = 1003.0
-    placement_width = 1504.0
+    placement_height = 960.0
+    placement_width = 1536.0
     rotation = 0.0
     type = "login_box"
 
@@ -72,11 +118,34 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
         show_unlock_hint = false
         show_weather = true
 
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 368.0
+    box_width = 368.0
+    cx = 960.0
+    cy = 460.0
+    output = "DP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "sticker"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
+        image_path = "/var/home/marcus/.torchic.gif"
+        opacity = 1.0
+
+[nightlight]
+enabled = true
+
 [notification]
 scale = 0.90000000596046448
 
 [osd]
 position = "bottom_center"
+
+    [osd.kinds]
+    lock_keys = false
+    volume_input = false
 
 [shell]
 clipboard_enabled = false
