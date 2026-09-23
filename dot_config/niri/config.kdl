@@ -141,8 +141,8 @@ binds {
     XF86AudioPrev        allow-when-locked=true { spawn-sh "noctalia msg media previous"; }
     XF86AudioNext        allow-when-locked=true { spawn-sh "noctalia msg media next"; }
 
-    XF86MonBrightnessUp allow-when-locked=true { spawn "noctalia msg brightness-up"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn "noctalia msg brightness-down"; }
+    XF86MonBrightnessUp allow-when-locked=true { spawn-sh "noctalia msg brightness-up"; }
+    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "noctalia msg brightness-down"; }
 
     Mod+O repeat=false { toggle-overview; }
 
@@ -271,5 +271,6 @@ binds {
     Ctrl+Alt+Delete { quit; }
 
 }
+
 
 include "noctalia.kdl"
