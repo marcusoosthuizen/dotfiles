@@ -25,6 +25,7 @@ fi
 unset rc
 
 alias music-dlp="yt-dlp -t mp3 --add-metadata --embed-thumbnail"
+alias sync-mods="rsync -av --delete ~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/instances/Server/minecraft/mods/ core@chud:mc/smp/mods"
 
 eval "$(starship init bash)"
 
