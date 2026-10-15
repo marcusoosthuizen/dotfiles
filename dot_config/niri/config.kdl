@@ -99,7 +99,7 @@ debug {
 }
 
 window-rule {
-    match app-id="vesktop"
+    match app-id="discord"
     match app-id="thunar"
     match app-id="md.obsidian.Obsidian"
 
@@ -120,7 +120,7 @@ binds {
     Mod+G { spawn "steam"; }
     Mod+Z { spawn-sh "flatpak run app.zen_browser.zen"; }
     Mod+Shift+Z { spawn-sh "flatpak run dev.zed.Zed"; }
-    Mod+D { spawn-sh "flatpak run dev.vencord.Vesktop"; }
+    Mod+D { spawn-sh "flatpak run com.discordapp.Discord"; }
     Mod+Shift+G { spawn-sh "flatpak run org.prismlauncher.PrismLauncher"; }
     Mod+Shift+O { spawn-sh "flatpak run md.obsidian.Obsidian"; }
     Mod+Shift+M { spawn-sh "flatpak run org.jeffvli.feishin"; }

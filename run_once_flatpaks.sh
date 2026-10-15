@@ -7,7 +7,7 @@ flatpak install -y flathub page.codeberg.libre_menu_editor.LibreMenuEditor # men
 
 flatpak install -y flathub app.zen_browser.zen # browser
 flatpak install -y flathub dev.zed.Zed # code editor
-flatpak install -y flathub dev.vencord.Vesktop # discord client
+flatpak install -y flathub com.discordapp.Discord # discord client
 flatpak install -y flathub org.prismlauncher.PrismLauncher # minecraft launcher
 flatpak install -y flathub md.obsidian.Obsidian # notes software
 flatpak install -y flathub com.obsproject.Studio # recording software

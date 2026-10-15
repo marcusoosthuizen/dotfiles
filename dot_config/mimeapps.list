@@ -6,7 +6,7 @@ audio/ogg=mpv.desktop;
 audio/wav=mpv.desktop;
 audio/webm=mpv.desktop;
 audio/x-flac=mpv.desktop;
-image/png=imv.desktop;
+image/png=org.gimp.GIMP.desktop;app.zen_browser.zen.desktop;imv.desktop;
 video/avi=mpv.desktop;
 video/mp4=mpv.desktop;
 video/mpeg=mpv.desktop;
@@ -80,6 +80,7 @@ application/x-zpaq=xarchiver.desktop;
 application/x-zstd-compressed-tar=xarchiver.desktop;
 application/zip=xarchiver.desktop;
 application/zstd=xarchiver.desktop;
+image/jpeg=imv.desktop;
 
 [Default Applications]
 application/pdf=zen-browser.desktop
@@ -108,4 +109,4 @@ video/x-msvideo=mpv.desktop
 x-scheme-handler/chrome=zen-browser.desktop
 x-scheme-handler/http=zen-browser.desktop
 x-scheme-handler/https=zen-browser.desktop
-
+image/jpeg=imv.desktop

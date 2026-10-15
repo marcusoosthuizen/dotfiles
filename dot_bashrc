@@ -11,8 +11,6 @@ if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
 fi
 export PATH
 
-export EDITOR=hx
-
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
@@ -29,3 +27,5 @@ unset rc
 alias music-dlp="yt-dlp -t mp3 --add-metadata --embed-thumbnail"
 
 eval "$(starship init bash)"
+
+command -v fastfetch >/dev/null && fastfetch
