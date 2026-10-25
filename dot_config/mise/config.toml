@@ -1,0 +1,4 @@
+[tools]
+copilot-cli = "latest"
+gh = "latest"
+yt-dlp = { version = "latest", rename_exe = "yt-dlp" }

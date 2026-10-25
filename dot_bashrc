@@ -29,5 +29,6 @@ alias sync-mods="rsync -av --delete ~/.var/app/org.prismlauncher.PrismLauncher/d
 alias sync-packs="rsync -av --delete ~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/instances/Server/minecraft/datapacks/ core@chud:mc/smp/datapacks"
 
 eval "$(starship init bash)"
+eval "$(mise activate bash)"
 
 command -v fastfetch >/dev/null && fastfetch
