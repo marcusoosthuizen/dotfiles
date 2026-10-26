@@ -1,18 +1,27 @@
 
-
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
 fi
 
 # User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-fi
+case ":$PATH:" in
+  *":$HOME/.local/share/mise/shims:"*) ;;
+  *) PATH="${PATH:+$PATH:}$HOME/.local/share/mise/shims" ;;
+esac
+case ":$PATH:" in
+  *":$HOME/.local/bin:"*) ;;
+  *) PATH="${PATH:+$PATH:}$HOME/.local/bin" ;;
+esac
 export PATH
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
+# Env Vars
+export EDITOR="/usr/bin/vim"
+export SUDO_EDITOR="$EDITOR"
+
+export BAT_THEME=ansi
+export MANROFFOPT="-c"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
@@ -24,11 +33,53 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+if command -v eza &> /dev/null; then
+  alias ls='eza -lh --group-directories-first --icons=auto'
+  alias lsa='ls -a'
+  alias lt='eza --tree --level=2 --long --icons --git'
+  alias lta='lt -a'
+fi
+
+alias ff="fzf --preview 'bat --style=numbers --color=always {}'"
+alias eff='$EDITOR "$(ff)"'
+
+if command -v zoxide &> /dev/null; then
+  alias cd="zd"
+  zd() {
+    if (( $# == 0 )); then
+      builtin cd ~ || return
+    elif [[ -d $1 ]]; then
+      builtin cd "$1" || return
+    else
+      if ! z "$@"; then
+        echo "Error: Directory not found"
+        return 1
+      fi
+
+      printf "\U000F17A9 "
+      pwd
+    fi
+  }
+fi
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
 alias music-dlp="yt-dlp -t mp3 --add-metadata --embed-thumbnail"
 alias sync-mods="rsync -av --delete ~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/instances/Server/minecraft/mods/ core@chud:mc/smp/mods"
 alias sync-packs="rsync -av --delete ~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/instances/Server/minecraft/datapacks/ core@chud:mc/smp/datapacks"
 
-eval "$(starship init bash)"
-eval "$(mise activate bash)"
+if command -v mise &> /dev/null; then
+  eval "$(mise activate bash)"
+fi
+
+if [[ $- == *i* ]] && [[ ${TERM:-} != "dumb" ]] && command -v starship &> /dev/null; then
+  eval "$(starship init bash --print-full-init)"
+fi
+
+if command -v zoxide &> /dev/null; then
+  eval "$(zoxide init bash)"
+fi
 
 command -v fastfetch >/dev/null && fastfetch

@@ -1,7 +1,6 @@
 [tools]
 bat = "latest"
 btop = "latest"
-cliamp = "latest"
 copilot-cli = "latest"
 dua = "latest"
 eza = "latest"
