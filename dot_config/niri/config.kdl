@@ -99,7 +99,7 @@ debug {
 }
 
 window-rule {
-    match app-id="equibop"
+    match app-id="discord"
     match app-id="org.gnome.Nautilus"
     match app-id="md.obsidian.Obsidian"
 
@@ -120,7 +120,7 @@ binds {
     Mod+G { spawn "steam"; }
     Mod+Z { spawn "zen-browser"; }
     Mod+Shift+Z { spawn "zed"; }
-    Mod+D { spawn "equibop"; }
+    Mod+D { spawn "discord"; }
     Mod+Shift+G { spawn-sh "flatpak run org.prismlauncher.PrismLauncher"; }
     Mod+Shift+O { spawn-sh "flatpak run md.obsidian.Obsidian"; }
     Mod+Shift+M { spawn-sh "flatpak run org.jeffvli.feishin"; }
