@@ -1,5 +1,5 @@
 [Added Associations]
-application/pdf=zen-browser.desktop;
+application/pdf=zen-browser.desktop;app.zen_browser.zen.desktop;
 audio/aac=mpv.desktop;
 audio/mpeg=mpv.desktop;
 audio/ogg=mpv.desktop;
@@ -108,7 +108,7 @@ application/x-zip-compressed=org.gnome.FileRoller.desktop;
 application/x-zoo=org.gnome.FileRoller.desktop;
 
 [Default Applications]
-application/pdf=zen-browser.desktop
+application/pdf=app.zen_browser.zen.desktop
 application/x-extension-htm=zen-browser.desktop
 application/x-extension-html=zen-browser.desktop
 application/x-extension-shtml=zen-browser.desktop
@@ -135,4 +135,3 @@ x-scheme-handler/chrome=zen-browser.desktop
 x-scheme-handler/http=zen-browser.desktop
 x-scheme-handler/https=zen-browser.desktop
 image/jpeg=imv.desktop
-

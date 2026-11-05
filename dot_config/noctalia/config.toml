@@ -239,8 +239,8 @@ scale = 0.90000000000000013
 type = "thepunkoff/pomodoro:widget"
 
 [widget.workspaces]
-empty_color = "surface_variant"
+empty_color = "surface_container"
 inactive_pill_size = 1.6000000000000001
-occupied_color = "outline"
+occupied_color = "outline_variant"
 pill_scale = 0.75
 show_labels = false
