@@ -10,7 +10,7 @@ tint_intensity = 0.0
 capsule = true
 center = [ "media", "clock", "weather" ]
 concave_edge_corners = false
-end = [ "tray", "status", "widget", "cpu", "notifications", "volume", "network", "battery" ]
+end = [ "tray", "widget_2", "status", "widget", "cpu", "notifications", "volume", "network", "battery" ]
 margin_ends = 0
 radius_top_left = 0
 radius_top_right = 0
@@ -60,7 +60,12 @@ transition_duration = 300
 [lockscreen_widgets]
 enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@eDP-1", "lockscreen-widget-0000000000000001" ]
+widget_order = [
+    "lockscreen-login-box@HDMI-A-1",
+    "lockscreen-login-box@DP-1",
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-widget-0000000000000001"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -80,7 +85,7 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@eDP-1", "loc
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -107,7 +112,7 @@ widget_order = [ "lockscreen-login-box@DP-1", "lockscreen-login-box@eDP-1", "loc
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -237,6 +242,10 @@ show_condition = false
 [widget.widget]
 scale = 0.90000000000000013
 type = "thepunkoff/pomodoro:widget"
+
+[widget.widget_2]
+show_text = false
+type = "nzlov/daily-wallpaper:widget"
 
 [widget.workspaces]
 empty_color = "surface_container"
