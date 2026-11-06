@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{pdfpages}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{refs.bib}
+\usepackage{listings}
+\usepackage{fancyhdr}
+
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  commentstyle=\color{gray},
+  stringstyle=\color{red},
+  breaklines=true,
+  showspaces=false
+}
+
+\usepackage{geometry}
+\geometry{left=3cm, right=3cm, top=2cm, bottom=2cm}
+
+
+\author{Marcus Oosthuizen}
+\title{Template Report}
+
+\newcommand{\newimage}[1]{\includegraphics[width=1\textwidth,height=1\textwidth,keepaspectratio]{#1}}
+\newcommand{\newsmallimage}[1]{\includegraphics[width=0.35\textwidth,height=0.35\textwidth,keepaspectratio]{#1}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Template Report Marcus Oosthuizen}
+\rhead{\thepage}
+
+\begin{document}
+
+%\includepdf[pages=-, fitpaper=true, pagecommand={\thispagestyle{empty}}]{cover.pdf}
+
+
+\tableofcontents
+\clearpage
+
+\section{Example Section}
+\subsection{Example Subsection}
+
+\clearpage
+\section{References}
+\nocite{*}
+\printbibliography[heading=none]
+
+\end{document}

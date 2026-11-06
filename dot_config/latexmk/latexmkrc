@@ -1,0 +1,5 @@
+$pdf_mode = 5;
+set_tex_cmds('-shell-escape %O %S');
+$aux_dir = '.build';
+$out_dir = '.';
+$clean_ext = 'xdv synctex.gz';

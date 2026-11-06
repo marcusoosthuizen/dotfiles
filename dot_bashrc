@@ -69,6 +69,8 @@ alias ....='cd ../../..'
 alias music-dlp="yt-dlp -t mp3 --add-metadata --embed-thumbnail"
 alias sync-mods="rsync -av --delete ~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/instances/Server/minecraft/mods/ core@chud:mc/smp/mods"
 alias sync-packs="rsync -av --delete ~/.var/app/org.prismlauncher.PrismLauncher/data/PrismLauncher/instances/Server/minecraft/datapacks/ core@chud:mc/smp/datapacks"
+alias gen-latex="cp -r $HOME/.config/template.tex ./report.tex;touch refs.bib"
+alias lspell="aspell -t check"
 
 if command -v mise &> /dev/null; then
   eval "$(mise activate bash)"
